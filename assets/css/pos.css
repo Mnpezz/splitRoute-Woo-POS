@@ -1,0 +1,307 @@
+/* POS Styles */
+.nano-split-pos-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+.nano-split-pos-header {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.nano-split-pos-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.nano-split-pos-cart,
+.nano-split-pos-input {
+    flex: 1 1 45%;
+    min-width: 300px;
+}
+
+.nano-split-pos-cart-items {
+    overflow-x: auto;
+}
+
+.nano-split-pos-cart-items table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.nano-split-pos-cart-items th,
+.nano-split-pos-cart-items td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.nano-split-pos-quantity {
+    width: 60px;
+    text-align: center;
+}
+
+.nano-split-pos-remove-item {
+    background: none;
+    border: none;
+    color: #cc0000;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.nano-split-pos-manual-input {
+    margin-bottom: 30px;
+}
+
+.form-row {
+    margin-bottom: 15px;
+}
+
+.form-row label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-row input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+}
+
+.nano-split-pos-products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 15px;
+}
+
+.nano-split-pos-product {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.nano-split-pos-product:hover {
+    border-color: #0073aa;
+    box-shadow: 0 0 5px rgba(0, 115, 170, 0.3);
+}
+
+.nano-split-pos-product-image {
+    margin-bottom: 10px;
+}
+
+.nano-split-pos-product-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.nano-split-pos-product-details h4 {
+    margin: 0 0 5px;
+    font-size: 14px;
+}
+
+.nano-split-pos-product-details .price {
+    margin: 0;
+    color: #0073aa;
+    font-weight: bold;
+}
+
+.nano-split-pos-checkout {
+    clear: both;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+.nano-split-pos-tip-section {
+    margin-bottom: 20px;
+}
+
+.nano-split-pos-tip-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.nano-split-pos-tip-btn {
+    padding: 8px 15px;
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.nano-split-pos-tip-btn:hover {
+    background-color: #0073aa;
+    color: white;
+    border-color: #0073aa;
+}
+
+.nano-split-pos-employee-address {
+    margin-top: 15px;
+}
+
+.nano-split-pos-payment-section {
+    margin-top: 20px;
+}
+
+.nano-split-pos-payment-actions {
+    text-align: center;
+}
+
+.nano-split-pos-modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.nano-split-pos-modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    width: 90%;
+    max-width: 500px;
+    position: relative;
+    border-radius: 5px;
+}
+
+.nano-split-pos-modal-close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.nano-split-pos-modal-close:hover,
+.nano-split-pos-modal-close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.nano-split-pos-payment-details {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.nano-split-pos-payment-qr {
+    flex: 0 0 200px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.nano-split-pos-payment-info {
+    flex: 1;
+    min-width: 200px;
+}
+
+.nano-split-pos-payment-status {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #f5f5f5;
+    border-left: 4px solid #0073aa;
+}
+
+.nano-split-pos-payment-actions {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.nano-split-pos-custom-tip-form {
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .nano-split-pos-container {
+        padding: 10px;
+    }
+    
+    .nano-split-pos-content {
+        flex-direction: column;
+    }
+    
+    .nano-split-pos-cart,
+    .nano-split-pos-input {
+        flex: 1 1 100%;
+    }
+    
+    .nano-split-pos-cart-items table {
+        font-size: 14px;
+    }
+    
+    .nano-split-pos-cart-items th,
+    .nano-split-pos-cart-items td {
+        padding: 8px 5px;
+    }
+    
+    .nano-split-pos-modal-content {
+        width: 95%;
+        margin: 5% auto;
+        padding: 15px;
+    }
+    
+    .nano-split-pos-payment-qr {
+        flex: 0 0 100%;
+        margin-right: 0;
+        text-align: center;
+    }
+    
+    .nano-split-pos-tip-options {
+        gap: 5px;
+    }
+    
+    .nano-split-pos-tip-btn {
+        padding: 6px 10px;
+        font-size: 14px;
+    }
+}
+
+.nano-split-pos-notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 15px 20px;
+    border-radius: 4px;
+    color: white;
+    font-weight: bold;
+    z-index: 9999;
+    display: none;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.nano-split-pos-notification.success {
+    background-color: #4CAF50;
+}
+
+.nano-split-pos-notification.error {
+    background-color: #f44336;
+}
+
+.nano-split-pos-notification-close {
+    float: right;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 20px;
+    cursor: pointer;
+    margin-left: 15px;
+}
+
+.nano-split-pos-notification-close:hover {
+    color: rgba(255, 255, 255, 0.8);
+} 

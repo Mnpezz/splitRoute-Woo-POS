@@ -1,0 +1,84 @@
+/* Admin Styles */
+.nano-split-pos-form {
+    margin-bottom: 30px;
+}
+
+.nano-split-pos-form .spinner {
+    float: none;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+.nano-split-pos-addresses-list {
+    margin-top: 20px;
+}
+
+.nano-split-pos-modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.nano-split-pos-modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    width: 50%;
+    max-width: 600px;
+    position: relative;
+}
+
+.nano-split-pos-modal-close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.nano-split-pos-modal-close:hover,
+.nano-split-pos-modal-close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.nano-split-pos-info {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-left: 4px solid #0073aa;
+}
+
+.payment-status {
+    display: inline-block;
+    padding: 3px 8px;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+.payment-status-pending {
+    background-color: #ffeba0;
+    color: #826200;
+}
+
+.payment-status-completed {
+    background-color: #c6e1c6;
+    color: #5b841b;
+}
+
+.payment-status-failed {
+    background-color: #eba3a3;
+    color: #761919;
+}
+
+.nano-split-pos-tooltip {
+    cursor: help;
+} 
