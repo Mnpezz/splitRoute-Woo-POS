@@ -146,6 +146,7 @@
                     <option value=""><?php _e('Select employee', 'nano-split-pos'); ?></option>
                     <?php 
                     $employees = get_option('nano_split_pos_employees', array());
+                    error_log('Nano Split POS - Employees loaded: ' . print_r($employees, true));
                     foreach ($employees as $employee) : 
                     ?>
                         <option value="<?php echo esc_attr($employee['nano_address']); ?>" data-id="<?php echo esc_attr($employee['id']); ?>"><?php echo esc_html($employee['name']); ?></option>
