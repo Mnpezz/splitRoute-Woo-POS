@@ -27,6 +27,7 @@
         // Handle employee selection
         $('#nano-split-pos-employee-select').on('change', function() {
             const selectedValue = $(this).val();
+            console.log('Employee selected:', selectedValue);
             
             if (selectedValue === 'custom') {
                 $('#nano-split-pos-custom-address-container').show();
@@ -42,6 +43,7 @@
                 // Save selected employee ID
                 const selectedOption = $(this).find('option:selected');
                 const employeeId = selectedOption.data('id');
+                console.log('Selected employee ID:', employeeId);
                 
                 if (employeeId) {
                     localStorage.setItem('nano_split_pos_employee_id', selectedValue);
