@@ -2,8 +2,7 @@
 /**
  * Plugin Name: Nano Split POS
  * Description: A Point of Sale system for Nano cryptocurrency with payment splitting capabilities
- * API URL: https://console.splitroute.com/dashboard/user
- * Version: 1.1.0
+ * Version: 1.2.0
  * Author: mnpezz
  * Text Domain: nano-split-pos
  */
